@@ -1,0 +1,79 @@
+.close-button{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.close-button span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(220, 220, 220);
+  border-radius: 100px;
+  padding: 10px;
+}
+.close-button span:hover{
+  background-color: rgb(54, 105, 88);
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.price-information {
+  display: flex;
+  flex-direction: column;
+}
+.price-information input{
+  width: 95%;
+  padding: 8px;
+  margin-bottom: 16px;
+}
+.modal {
+  background: #fff;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 400px;
+}
+.modal select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 50px;
+}
+.modal h2 {
+  margin-bottom: 10px;
+}
+.modal .button-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal button {
+  margin-right: 10px;
+  padding: 10px 15px;
+  width: 150px;
+  border: none;
+  background-color: aquamarine;
+  font-weight: bold;
+  color: rgb(2, 62, 42);
+  border-radius: 5px;
+}
+.modal button:hover {
+  cursor: pointer;
+  background-color: rgb(54, 105, 88);
+  color: white;
+  transition: 0.3s;
+}

@@ -1,0 +1,108 @@
+.close-button{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.close-button span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(220, 220, 220);
+  border-radius: 100px;
+  padding: 10px;
+}
+.close-button span:hover{
+  background-color: rgb(54, 105, 88);
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+.modal-overlay.open{
+  display: flex;
+}
+.history-modal {
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+}
+.history-list-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.history-list-item {
+  display: flex;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  justify-content: space-between;
+}
+.history-list-item span{
+  font-weight: bold;
+  color: rgb(54, 105, 88);
+  margin-right: 10px;
+}
+.history-list-item p{
+  width: 33%;
+  display: flex;
+  justify-content: center;
+}
+.history-modal button {
+  margin-right: 10px;
+  padding: 10px 15px;
+  width: 100px;
+  border: none;
+  background-color: aquamarine;
+  font-weight: bold;
+  color: rgb(2, 62, 42);
+  border-radius: 5px;
+}
+.history-modal button:hover {
+  cursor: pointer;
+  background-color: rgb(54, 105, 88);
+  color: white;
+  transition: 0.3s;
+}
+.history-modal button{
+  width: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 500px) {
+  .history-list-item {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .history-list-item p {
+    width: 80%;
+    display: flex;
+    justify-content: start;
+    margin: 10px 0;
+  }
+}
